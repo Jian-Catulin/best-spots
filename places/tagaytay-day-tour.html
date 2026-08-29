@@ -48,5 +48,57 @@
         </table>
     </main>
 
+    <form>
+    <h2>Suggest a New Spot</h2>
+
+  
+    <p>
+        <label for="place_name">Place name</label><br>
+        <input type="text" id="place_name" name="place_name" required>
+    </p>
+
+   
+    <fieldset>
+        <legend>Category</legend>
+        <p>
+            <input type="radio" id="cat_food" name="category" value="food" required>
+            <label for="cat_food">Food & Budget Meals</label>
+        </p>
+        <p>
+            <input type="radio" id="cat_study" name="category" value="study">
+            <label for="cat_study">Study & Chill Spot</label>
+        </p>
+        <p>
+            <input type="radio" id="cat_outdoors" name="category" value="outdoors">
+            <label for="cat_outdoors">Outdoors & Scenic Ride</label>
+        </p>
+    </fieldset>
+
+ 
+    <fieldset>
+        <legend>What's good about it?</legend>
+        <p>
+            <input type="checkbox" id="perk_affordable" name="perks" value="affordable">
+            <label for="perk_affordable">Student-budget friendly</label>
+        </p>
+        <p>
+            <input type="checkbox" id="perk_wifi" name="perks" value="wifi">
+            <label for="perk_wifi">Fast WiFi</label>
+        </p>
+        <p>
+            <input type="checkbox" id="perk_parking" name="perks" value="parking">
+            <label for="perk_parking">Good Motorcycle Parking</label>
+        </p>
+    </fieldset>
+
+
+    <p>
+        <label for="suggester_email">Contact email</label><br>
+        <input type="email" id="suggester_email" name="suggester_email" required>
+    </p>
+
+    <button type="submit">Submit Suggestion</button>
+</form>
+
 </body>
 </html>
