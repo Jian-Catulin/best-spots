@@ -67,3 +67,72 @@ nav a:hover {
   margin-bottom: 20px;
   border-radius: 8px;
 }
+
+
+.place-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 20px; 
+  border-left: 6px solid var(--brand);
+  margin-bottom: 24px;
+}
+
+
+.place-card h3 {
+  font-size: 1.4rem;
+  color: var(--brand);
+  margin-top: 0;
+}
+
+
+fieldset {
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid var(--muted);
+  background-color: #ffffff;
+}
+
+legend {
+  color: var(--brand);
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 0 8px;
+}
+
+
+input,
+textarea,
+select {
+  padding: 12px;
+  border: 1px solid var(--muted);
+  border-radius: 4px;
+  width: 100%;
+  max-width: 450px;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+
+button[type="submit"] {
+  background-color: var(--brand);
+  color: #ffffff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1rem;
+  margin-top: 16px;
+}
+
+button[type="submit"]:hover {
+  background-color: var(--ink);
+}
+
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: 3px solid var(--brand);
+  outline-offset: 2px;
+}
