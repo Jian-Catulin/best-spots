@@ -5,7 +5,6 @@
   --bg-light: #F7F9F6;
 }
 
-
 * {
   box-sizing: border-box;
 }
@@ -19,10 +18,13 @@ body {
 }
 
 
-header {
+.site-header {
   background-color: #ffffff;
   padding: 20px;
   border-bottom: 3px solid var(--brand);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 main {
@@ -41,11 +43,12 @@ footer {
 nav ul {
   list-style: none;
   padding: 0;
+  display: flex;
+  gap: 20px; 
 }
 
+
 nav li {
-  display: inline-block;
-  margin-right: 20px;
 }
 
 nav a {
@@ -59,12 +62,13 @@ nav a:hover {
 }
 
 
-.place-card {
-  background-color: #ffffff;
-  border: 1px solid var(--muted);
-  border-left: 5px solid var(--brand);
-  padding: 20px;
-  margin-bottom: 20px;
+.centered-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  background-color: #e2e8e4;
+  margin-bottom: 30px;
   border-radius: 8px;
 }
 
@@ -72,11 +76,11 @@ nav a:hover {
 .place-card {
   background-color: #ffffff;
   border-radius: 8px;
-  padding: 20px; 
+  border: 1px solid var(--muted);
   border-left: 6px solid var(--brand);
+  padding: 20px; 
   margin-bottom: 24px;
 }
-
 
 .place-card h3 {
   font-size: 1.4rem;
@@ -84,7 +88,7 @@ nav a:hover {
   margin-top: 0;
 }
 
-
+/*  Contact Form  */
 fieldset {
   padding: 20px;
   border-radius: 8px;
@@ -99,7 +103,6 @@ legend {
   padding: 0 8px;
 }
 
-
 input,
 textarea,
 select {
@@ -111,7 +114,6 @@ select {
   font-family: inherit;
   font-size: 1rem;
 }
-
 
 button[type="submit"] {
   background-color: var(--brand);
@@ -128,7 +130,6 @@ button[type="submit"] {
 button[type="submit"]:hover {
   background-color: var(--ink);
 }
-
 
 input:focus,
 textarea:focus,
