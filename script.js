@@ -5,7 +5,7 @@ const currentYear = 2026;
 
 let runningCount = 0;
 
-// 3. A small calculation (computing total places reviewed)
+
 const spiritualSites = 1;
 const natureSpots = 1;
 const lifestyleHubs = 1;
@@ -34,4 +34,43 @@ if (footerElement) {
 const statsElement = document.getElementById('computed-stats');
 if (statsElement) {
     statsElement.textContent = "Total places currently reviewed: " + totalPlaces;
+}
+
+const placeRating = 4.5;
+let ratingLabel;
+
+if (placeRating >= 4) {
+    ratingLabel = "Highly recommended";
+} else if (placeRating >= 2.5) {
+    ratingLabel = "Worth a visit";
+} else {
+    ratingLabel = "Only if you're nearby";
+}
+
+const ratingDisplay = document.getElementById('circuit-rating');
+if (ratingDisplay) {
+    ratingDisplay.textContent = placeRating + " Stars - " + ratingLabel;
+}
+
+
+const priceLevel = 2; // Let's say 1-2 is budget-friendly, 3+ is expensive
+const isOpen = true;
+
+
+const isGoodOption = (isOpen === true && priceLevel <= 2);
+const statusNote = isGoodOption ? "Good option right now" : "Maybe another time";
+
+const budgetDisplay = document.getElementById('circuit-budget');
+if (budgetDisplay) {
+    budgetDisplay.textContent = statusNote;
+}
+
+
+const isNearby = false;
+
+const distanceNote = (isNearby === true) ? "Walking distance" : "Better to commute";
+
+const distanceDisplay = document.getElementById('circuit-distance');
+if (distanceDisplay) {
+    distanceDisplay.textContent = distanceNote;
 }
